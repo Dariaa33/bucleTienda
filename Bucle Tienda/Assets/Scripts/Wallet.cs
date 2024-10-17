@@ -8,7 +8,7 @@ public class Wallet : MonoBehaviour
     [SerializeField]
     float saldo;
     [SerializeField]
-    TextMeshPro labelSaldo;
+    TextMeshProUGUI labelSaldo;
 
     [SerializeField]
     GameObject confirmarCompra;
@@ -19,7 +19,7 @@ public class Wallet : MonoBehaviour
     void Start()
     {
         saldo = Random.Range(450f, 950f);
-        labelSaldo.text = saldo.ToString("000.000") + " €";
+        labelSaldo.text = saldo.ToString("000.000") + " eur";
     }
 
     
@@ -29,7 +29,7 @@ public class Wallet : MonoBehaviour
 
         {
             saldo -= precio;
-            labelSaldo.text = saldo.ToString("000.000") + " €";
+            labelSaldo.text = saldo.ToString("000.000") + " eur";
         }
         else
         {

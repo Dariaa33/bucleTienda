@@ -17,15 +17,14 @@ public class ButtonShop : MonoBehaviour
     [SerializeField]
     float priceItem;
 
-    // Start is called before the first frame update
     void Start()
     {
         textButton = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         priceItem = Random.Range(25f, 350f);
-        textButton.text = priceItem.ToString() + " €";
+        textButton.text = priceItem.ToString() + " eur";
     }
 
-    void ClickEnButtonDeTienda()
+    public void ClickEnButtonDeTienda()
     {
         myWallet.RestartSaldo(priceItem);
     }
