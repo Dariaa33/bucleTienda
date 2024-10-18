@@ -11,7 +11,8 @@ public class ButtonShop : MonoBehaviour
 
     [SerializeField]
     TextMeshProUGUI textButton;
-
+    [SerializeField]
+    string[] posiblesNombres;
     [SerializeField]
     string nameItem = "Objeto";
     [SerializeField]
@@ -19,19 +20,16 @@ public class ButtonShop : MonoBehaviour
 
     void Start()
     {
+        nameItem = posiblesNombres[Random.Range(0, posiblesNombres.Length)];
         textButton = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         priceItem = Random.Range(25f, 350f);
-        textButton.text = priceItem.ToString() + " eur";
+        textButton.text = nameItem + priceItem.ToString() + " €";
     }
 
     public void ClickEnButtonDeTienda()
     {
-        myWallet.RestartSaldo(priceItem);
+        myWallet.InformarCompra(nameItem, priceItem);
     }
     
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

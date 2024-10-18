@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 17196024}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1497479156}
+        m_TargetAssemblyTypeName: Wallet, Assembly-CSharp
+        m_MethodName: ConfirmarCompra
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &17196024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1314,7 +1326,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 682255590}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 930561742}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &682255590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1462,8 +1486,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: 0.001236}
-  m_SizeDelta: {x: 1920, y: 896.35}
+  m_AnchoredPosition: {x: -0.000030518, y: -0.00079727}
+  m_SizeDelta: {x: 1920, y: 1080.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &739889819
 MonoBehaviour:
@@ -1638,7 +1662,6 @@ GameObject:
   - component: {fileID: 930561743}
   - component: {fileID: 930561745}
   - component: {fileID: 930561744}
-  - component: {fileID: 930561746}
   m_Layer: 5
   m_Name: VentanaConfirmar
   m_TagString: Untagged
@@ -1707,18 +1730,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930561742}
   m_CullTransparentMesh: 1
---- !u!114 &930561746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930561742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348184f8b78abde4291c686384c14586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1123314396
 GameObject:
   m_ObjectHideFlags: 0
@@ -2270,6 +2281,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myWallet: {fileID: 1497479156}
   textButton: {fileID: 0}
+  posiblesNombres:
+  - a
+  - s
+  - f
+  - g
   nameItem: Objeto
   priceItem: 0
 --- !u!1 &1437378716
@@ -2554,6 +2570,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myWallet: {fileID: 1497479156}
   textButton: {fileID: 0}
+  posiblesNombres:
+  - r
+  - e
+  - u
+  - h
   nameItem: Objeto
   priceItem: 0
 --- !u!1 &1497479155
@@ -2587,6 +2608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saldo: 0
   labelSaldo: {fileID: 1132608604}
+  "labelConfirmaci\xF3n": {fileID: 418566436}
   confirmarCompra: {fileID: 930561742}
   noSaldo: {fileID: 1817086047}
 --- !u!4 &1497479157
@@ -2752,6 +2774,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myWallet: {fileID: 1497479156}
   textButton: {fileID: 0}
+  posiblesNombres:
+  - p
+  - z
+  - m
+  - n
   nameItem: Objeto
   priceItem: 0
 --- !u!1 &1730222753
@@ -3182,6 +3209,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myWallet: {fileID: 1497479156}
   textButton: {fileID: 0}
+  posiblesNombres:
+  - k
+  - h
+  - e
+  - o
   nameItem: Objeto
   priceItem: 0
 --- !u!1 &1969978265
